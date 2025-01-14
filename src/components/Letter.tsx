@@ -1,33 +1,47 @@
 import React from 'react';
+import styles from '../styles/Letter.module.css';
 
 const Letter = () => {
   return (
-    <div className="flex justify-center items-center min-h-[80vh] py-8">
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-2xl w-full transform transition-transform hover:scale-105">
-        <div className="text-center space-y-6">
-          <h2 className="text-3xl font-bold text-red-500">My Dearest Sonia</h2>
-          <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
+    <div className={styles.container}>
+      <div className={styles.card}>
+        <div className={styles.content}>
+          <h2 className={styles.title}>Dear Wife</h2>
+          <div className={styles.text}>
             <p>
               As we celebrate our first year together, I want to tell you how much joy and happiness
               you've brought into my life. Every moment with you has been precious, and I cherish
               all the memories we've created together.
             </p>
             <p>
-              You make my world brighter, my smile wider, and my heart fuller. Thank you for being
-              the amazing person you are and for sharing your life with me.
+              I knew I had to have you from the moment I layed eyes on you in that Scotiabank hallway.
+              I tried my best to gain your interest in the middle of a LensCrafters but it wasn't meant to be.
+              I remember saying you looked different on that Marino staircase because honestly I didn't know WHAT to say.
+              I tried my best to be romantic when I pulled you close in the rain making an excuse that puddles would hit you and asking you to dinner.
+              ...
+              But then you said no.
+              A week later, you asked ME out because I mustered up enough courage to ask you for a spot in the gym when Kyle bailed on me and from there, it all began.
+            </p>
+            <p>(You only asked me because you objectified me though lets be honest.)
+            </p>
+            <p>
+              You have done everything to show me that your love knows no bounds. You have taken care of me when I've been ill and brought me up at my lowest lows.
+              You're everything I've ever wanted and I'm so happy I made you mine. I can't believe we've already made it to one year. I know I can be a demanding pet
+              in what I require from my partner, but you effortlessly meet all the expectations I could ever have. My written card will be more detailed, but I want you to be
+              able to keep this forever.
             </p>
             <p className="font-semibold text-red-500">
-              Here's to many more years of love, laughter, and adventures together.
+              Here's to many more years of love, laughter, and adventures together. (By many years I require the rest of your natural life and all of eternity after)
             </p>
-            <p className="text-xl font-bold text-red-500 pt-4">
+            <p className={styles.signature}>
               With all my love,<br />
-              [Your Name]
+              Pet (Tarif Khan)
             </p>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Letter;

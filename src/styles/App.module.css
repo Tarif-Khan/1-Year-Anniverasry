@@ -1,0 +1,14 @@
+/* App.module.css */
+.container {
+  @apply min-h-screen bg-pink-100;
+}
+
+.mainContent {
+  @apply container mx-auto px-4 py-8 max-w-7xl;
+}
+
+@media (max-width: 640px) {
+  .mainContent {
+    @apply px-2 py-4;
+  }
+}

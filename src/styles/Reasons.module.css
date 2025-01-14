@@ -1,0 +1,46 @@
+.grid {
+  display: grid;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.text {
+  color: #2d3748;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}

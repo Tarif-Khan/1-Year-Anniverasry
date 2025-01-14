@@ -1,0 +1,38 @@
+/* Home.module.css */
+.container {
+  @apply flex flex-col items-center justify-center min-h-[80vh] space-y-8;
+}
+
+.heartContainer {
+  @apply animate-pulse;
+}
+
+.heart {
+  @apply w-40 h-40 text-red-500 animate-[beat_1s_ease-in-out_infinite];
+}
+
+.textContainer {
+  @apply text-center space-y-4;
+}
+
+.title {
+  @apply text-5xl font-bold text-red-500;
+}
+
+.subtitle {
+  @apply text-3xl font-semibold text-pink-600;
+}
+
+@media (max-width: 640px) {
+  .heart {
+    @apply w-28 h-28;
+  }
+
+  .title {
+    @apply text-3xl;
+  }
+
+  .subtitle {
+    @apply text-xl;
+  }
+}

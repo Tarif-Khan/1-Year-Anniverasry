@@ -1,0 +1,38 @@
+/* NavBar.module.css */
+.nav {
+  @apply bg-pink-200 shadow-lg sticky top-0 z-50;
+}
+
+.navContainer {
+  @apply container mx-auto px-4;
+}
+
+.navItems {
+  @apply flex justify-center space-x-8;
+}
+
+.navButton {
+  @apply flex items-center space-x-2 py-4 px-6 transition-colors duration-300;
+}
+
+.navButtonActive {
+  @apply text-red-600 border-b-2 border-red-600;
+}
+
+.navButtonInactive {
+  @apply text-gray-700 hover:text-red-600;
+}
+
+@media (max-width: 640px) {
+  .navItems {
+    @apply space-x-2;
+  }
+
+  .navButton {
+    @apply px-3 py-3 flex-col space-x-0 space-y-1 text-sm;
+  }
+
+  .navButtonText {
+    @apply text-xs;
+  }
+}

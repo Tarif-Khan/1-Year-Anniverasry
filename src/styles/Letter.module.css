@@ -1,0 +1,42 @@
+/* Letter.module.css */
+.container {
+  @apply flex justify-center items-center min-h-[80vh] py-8;
+}
+
+.card {
+  @apply bg-white p-8 rounded-lg shadow-lg max-w-2xl w-full transform transition-transform hover:scale-105;
+}
+
+.content {
+  @apply text-center space-y-6;
+}
+
+.title {
+  @apply text-3xl font-bold text-red-500;
+}
+
+.text {
+  @apply space-y-4 text-gray-700 text-lg leading-relaxed;
+}
+
+.signature {
+  @apply text-xl font-bold text-red-500 pt-4;
+}
+
+@media (max-width: 640px) {
+  .card {
+    @apply p-4;
+  }
+
+  .title {
+    @apply text-2xl;
+  }
+
+  .text {
+    @apply text-base;
+  }
+
+  .signature {
+    @apply text-lg;
+  }
+}
